@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import { motion } from "framer-motion";
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
@@ -44,8 +44,33 @@ const Home = () => {
 };
 
 const Letter = () => {
+  const audioRef = useRef(null);
+
+  useEffect(() => {
+    const playAudio = () => {
+      if (audioRef.current) {
+        audioRef.current.muted = false; // Unmute
+        audioRef.current.play().catch((err) => {
+          console.log("Autoplay blocked, waiting for interaction:", err);
+        });
+      }
+    };
+
+    // Play music on mount
+    playAudio();
+
+    // If autoplay is blocked, wait for a click
+    document.addEventListener("click", playAudio, { once: true });
+
+    return () => document.removeEventListener("click", playAudio);
+  }, []); // Runs every time the component mounts
+
   return (
     <div className="min-h-screen bg-gradient-to-bl from-[#1A1A40] to-[#4C2A85] flex flex-col items-center justify-center text-white p-6">
+      <audio ref={audioRef} autoPlay loop muted>
+        <source src="/wanna_be_yours.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
       <motion.h2
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
