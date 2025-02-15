@@ -98,7 +98,7 @@ const Letter = () => {
         guilty or regret feel garauna man lagdaina, j xa present ko kura rakhna
         man lagxa, as timro past ko kura haru le timlai traumatize gareko xa. I
         just have unfathomable words for you, aile lai yetti jo lekhe. I just
-        trulyyy care about you, baby (😆). Thank youuuuu soooo muchhhh for being
+        trulyyy care about you, baby 💗. Thank youuuuu soooo muchhhh for being
         with me 💞💞
       </motion.p>
       <motion.div
