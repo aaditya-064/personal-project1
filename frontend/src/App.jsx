@@ -83,7 +83,7 @@ function App() {
         {!isOpen ? (
           <div>
             <p className="text-xl text-center">
-              Click the mailbox to open your letter 💌
+              Click the mailbox to open something 💌
             </p>
             <p>
               NOTE: I spoiled it today even though I was supposed to do it
@@ -135,8 +135,10 @@ function App() {
               important to me. Because you matter. <br />I love the way you
               talk, the way you explain things, the way you use your hands while
               speaking—it’s adorable, and I cherish every little detail about
-              you. <br />I hope to spend my whole life with you. I love you
-              Sami❤️
+              you. <br />I hope to spend my whole life with you. I truly love
+              you Sami. These days were so great talking to you, those late
+              night calls and texts, I loved it. I want to make this bond
+              stronger now and thought this was the time❤️
               <br />
               No Pressure, take the time and reply with a cool mind 🙂💞
             </p>
@@ -152,7 +154,7 @@ function App() {
           transition={{ duration: 0.5 }}
         >
           <p className="text-lg">
-            Write your reply below or in insta, where ever you want 💌
+            Write your reply below or in insta, where ever you want💌
           </p>
           <Input
             className="mt-2 p-2 border border-gray-300 rounded-md w-80 text-black"
