@@ -107,12 +107,13 @@ function App() {
             <p className="text-lg font-semibold">Dear Samikshya Shrestha,</p>
             <p className="mt-2 text-md z-10">
               Timro birthday samma wait garxu bhanera socheko thiye kina ki I
-              wanted to make you happy on this birthday with a little suriprise,
+              wanted to make you happy on this birthday with a little surprise,
               tara I thought tyo dherai late hunxa, ani yo friday hand-written
               note lekhera bhanxu bhaneko timi friday absent huni raixau. So I'm
               confessing here today although I said to focus on study first (tyo
               bahana banako thiye).
               <br />
+              Dear, <br />
               I’ve never bowed before anyone, but for you, I would—because
               you’re the one person I never want to lose. I’ve done things in
               the past without regret, but when it comes to you, I’d apologize a
@@ -127,11 +128,11 @@ function App() {
               completely, and I believe in you. You have so much potential, and
               I know you’ll make your family proud. And I want you to know—I’m
               proud of you too. <br />I know I can be immature and stupid at
-              times, but if you accept me for who I am, and for that, I’m truly
-              grateful. This bond isn’t something I take lightly, and I never
-              want it to break over fake promises. I want us to last. <br />I
-              wasn’t always the best, but for you, I’ve changed and want to
-              change the bad things you don't like about me. Because you’re
+              times, but ig and hope you accept me for who I am, and for that,
+              I’m truly grateful. This bond isn’t something I take lightly, and
+              I never want it to break over fake promises. I want us to last.{" "}
+              <br />I wasn’t always the best, but for you, I’ve changed and want
+              to change the bad things you don't like about me. Because you’re
               important to me. Because you matter. <br />I love the way you
               talk, the way you explain things, the way you use your hands while
               speaking—it’s adorable, and I cherish every little detail about
@@ -141,6 +142,9 @@ function App() {
               stronger now and thought this was the time❤️
               <br />
               No Pressure, take the time and reply with a cool mind 🙂💞
+              <br />
+              PS: 07:12 is the exact opposite time of your birthday. 12/07 😘,
+              thought it was special.
             </p>
           </Card>
         </motion.div>
