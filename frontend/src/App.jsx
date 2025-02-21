@@ -6,6 +6,7 @@ import { Button } from "./components/Button"; // Custom Button component
 import { MailOpen } from "lucide-react"; // MailOpen icon from lucide-react
 import emailjs from "emailjs-com"; // Import EmailJS
 import "./App.css"; // Import the CSS file for flower animation
+import { initGA, logPageView } from "./utils/analytics";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -175,6 +176,11 @@ function App() {
           {submitted && (
             <p className="mt-2 text-green-400">Reply sent successfully! 💕</p>
           )}
+          <button
+            onClick={() => logEvent("User", "Clicked Button", "Subscribe")}
+          >
+            Click Me
+          </button>
         </motion.div>
       )}
     </div>
